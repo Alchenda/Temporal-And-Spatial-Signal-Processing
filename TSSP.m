@@ -51,3 +51,16 @@ end
 
 disp('Single sided CCR')
 disp(CCR1);
+
+%convulation can be used for calculating correlation
+
+%convolution reverses of the sequences at the start of its operation.
+%Correlation, we do not want this reversal. The 'flipud' function can be
+%used to re-reverse the y column, such that the convolution will generate
+%our cross-correlation
+CC = conv(x, flipud(y));
+
+disp('convolution based CCR');
+disp(CC);
+
+disp('Take time to observe that the CCR generated via the manual 2-sided CCR and Convolution CCR are the same');
