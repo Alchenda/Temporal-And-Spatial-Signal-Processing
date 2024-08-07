@@ -32,3 +32,8 @@ disp('a =');
 disp(a);
 disp('ahat =');
 disp(ahat');
+
+y = x(3:N) ;
+M = [x( 2:N - 1) x(1:N - 2)] ;
+w = inv(M' * M) * M' * y;
+w = 1.7222 , -0.8297 

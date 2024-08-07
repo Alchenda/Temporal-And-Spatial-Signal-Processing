@@ -3,7 +3,7 @@ clear all;
 
 %create basic sine wave. this will be used in place of the input sample
 %vector previously examined for CCR
-t = 0:pi / 100:2*4*pi;
+t = 0:pi/100:2*4*pi;
 x = sin(t);
 
 %two sided correlation examined first
